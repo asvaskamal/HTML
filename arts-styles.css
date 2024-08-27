@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-image: url('header-background.jpg'); /* Replace with your header background image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+    text-align: justify;
+}
+
+footer {
+    background-color: #343a40;
+    color: #adb5bd;
+}

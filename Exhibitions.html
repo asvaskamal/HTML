@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitions - Fine Arts Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img src="images/logo.webp">
+            <a class="navbar-brand title" href="index.html" >Fine Arts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="News&Events.html">News&Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Exhibitions.html">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ArtistProfile.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UserDashBoard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Current and Upcoming Exhibitions Section -->
+    <section class="section exhibition-list">
+        <div class="container">
+            <h2 class="text-center">Current & Upcoming Exhibitions</h2>
+            <div class="row">
+                <!-- Exhibition Item 1 -->
+                <div class="col-md-4 exhibition-item">
+                    <img src="images/Art-Upcoming-img1.jpeg" alt="Exhibition 1">
+                    <div class="exhibition-details">
+                        <h4>AI WEIWEI – INTERLACING:ARTS</h4>
+                        <p>Date: Jan 1, 2025 - Jan 31, 2025</p>
+                        <p>Location: Gallery A, Fine Arts Museum</p>
+                        <p>Explore the finest collection of modern art.</p>
+                        <button class="btn register-btn" data-toggle="modal" data-target="#exhibitionModal1">Register</button>
+                    </div>
+                </div>
+                <!-- Exhibition Item 2 -->
+                <div class="col-md-4 exhibition-item">
+                    <img src="images/Art-Upcoming-img2.jpeg" alt="Exhibition 2">
+                    <div class="exhibition-details">
+                        <h4>ALBERT RENGER-PATZSCH: THINGS</h4>
+                        <p>Date: Feb 1, 2025 - Feb 28, 2025</p>
+                        <p>Location: Gallery B, Fine Arts Museum</p>
+                        <p>An insight into classical art and sculptures.</p>
+                        <button class="btn register-btn" data-toggle="modal" data-target="#exhibitionModal2">Register</button>
+                    </div>
+                </div>
+                <!-- Exhibition Item 3 -->
+                <div class="col-md-4 exhibition-item">
+                    <img src="images/Art-Upcoming-img3.jpeg" alt="Exhibition 3">
+                    <div class="exhibition-details">
+                        <h4>ALEXANDER CALDER: A BALANCING ACT</h4>
+                        <p>Date: Mar 1, 2025 - Mar 31, 2025</p>
+                        <p>Location: Gallery C, Fine Arts Museum</p>
+                        <p> contemporary artworks from artists.</p>
+                        <button class="btn register-btn" data-toggle="modal" data-target="#exhibitionModal3">Register</button>
+                    </div>
+                </div>
+                <!-- More Exhibition Items can be added in the same format -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Exhibitions Section -->
+    <section class="section past-exhibitions">
+        <div class="container">
+            <h2 class="text-center">Past Exhibitions</h2>
+            <div class="row">
+                <!-- Past Exhibition Item 1 -->
+                <div class="col-md-4 past-item">
+                    <img src="images/Art-past-img1.jpeg" alt="Past Exhibition 1">
+                    <h5 class="mt-3">‘A BALLAD OF LOVE AND DEATH’</h5>
+                    <p>Date: Jan 2024</p>
+                    <p>A retrospective exhibition of 20th-century abstract art.</p>
+                </div>
+                <!-- Past Exhibition Item 2 -->
+                <div class="col-md-4 past-item">
+                    <img src="images/Art-past-img2.jpeg" alt="Past Exhibition 2">
+                    <h5 class="mt-3">‘A HARD MAN IS GOOD TO FIND!</h5>
+                    <p>Date: Mar 2024</p>
+                    <p>An exploration of classical sculptures and artifacts.</p>
+                </div>
+                <!-- Past Exhibition Item 3 -->
+                <div class="col-md-4 past-item">
+                    <img src="images/Art-past-img3.jpeg" alt="Past Exhibition 3">
+                    <h5 class="mt-3">‘A TURBULENT LENS’</h5>
+                    <p>Date: May 2024</p>
+                    <p>A journey through contemporary art innovations.</p>
+                </div>
+                <!-- More Past Exhibition Items can be added in the same format -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibition Registration Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="exhibitionModal1" tabindex="-1" aria-labelledby="exhibitionModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exhibitionModal1Label">Register for Exhibition Title 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="btn register-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn register-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exhibitionModal2" tabindex="-1" aria-labelledby="exhibitionModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exhibitionModal2Label">Register for Exhibition Title 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name2">Name</label>
+                            <input type="text" class="form-control" id="name2" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email2">Email address</label>
+                            <input type="email" class="form-control" id="email2" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone2">Phone Number</label>
+                            <input type="text" class="form-control" id="phone2" placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="btn register-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn register-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="exhibitionModal3" tabindex="-1" aria-labelledby="exhibitionModal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exhibitionModal3Label">Register for Exhibition Title 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name3">Name</label>
+                            <input type="text" class="form-control" id="name3" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email3">Email address</label>
+                            <input type="email" class="form-control" id="email3" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone3">Phone Number</label>
+                            <input type="text" class="form-control" id="phone3" placeholder="Enter your phone number">
+                        </div>
+                        <button type="submit" class="btn register-btn">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn register-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <div class="container">
+            <p>&copy; 2024 Fine Arts Website. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

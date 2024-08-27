@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.navbar {
+    background-color: #333;
+}
+
+.navbar .title
+{
+    font-family: "poppins" Arial;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-family: "poppins" sans-serif;
+    font-size: 20px;
+}
+
+.banner {
+    height: 500px;
+
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.introduction, .featured-collections, .news-updates, .quick-links, .contact-info {
+    padding: 50px 0;
+}
+
+.featured-collections .collection-item, .news-updates .news-item {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+/* About Us page Styling starts from here */
+
+.section {
+    padding: 50px 0;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.curators .staff-member {
+    margin-bottom: 30px;
+}
+
+.curators img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievements-list li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 5px solid #333;
+}
+
+.mission-vision {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Collections Page styles starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.collection-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.collection-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.collection-item:hover img {
+    transform: scale(1.1);
+}
+
+.collection-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.categories {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categories .btn {
+    margin: 5px;
+}
+
+.category-filter {
+    cursor: pointer;
+}
+
+.btn-custom {
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #555;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* Exhibitions Page styles starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.exhibition-item {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.exhibition-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.exhibition-item:hover img {
+    transform: scale(1.1);
+}
+
+.exhibition-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.past-exhibitions .past-item {
+    margin-bottom: 30px;
+}
+
+.past-exhibitions img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.register-btn {
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #555;
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+/* News & Events Page stles starts from here */
+
+.section {
+    padding: 50px 0;
+}
+
+.news-article,
+.event-item {
+    margin-bottom: 30px;
+}
+
+.news-article img,
+.event-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.article-content {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 10;
+}
+
+.event-details {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 10;
+}
+
+.archive-item {
+    margin-bottom: 20px;
+}
+
+.archive-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.read-more {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #555;
+}
+
+.btn-custom {
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #555;
+}
+
+/* Contact Us Webpage style starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.form-control,
+.btn-submit {
+    border-radius: 30px;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #555;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-details h5 {
+    margin-top: 0;
+}
+
+.contact-details p {
+    margin-bottom: 5px;
+}
+
+/* Artist Profile styles starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.artist-thumbnail img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.artist-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.artist-bio {
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+.artist-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-profile {
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn-profile:hover {
+    background-color: #555;
+}
+
+/* Blog Page stles starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog-post-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.blog-post-meta {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.category-list {
+    margin-bottom: 30px;
+}
+
+.category-list a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.category-list a:hover {
+    background-color: #e9ecef;
+}
+
+.blog-post-content {
+    padding: 15px;
+}
+
+/* FAQ Page styles starts from here */
+.section {
+    padding: 50px 0;
+}
+
+.faq-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.faq-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.faq-card-header {
+    background-color: #f8f9fa;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.faq-card-header:hover {
+    background-color: #e9ecef;
+}
+
+.faq-card-body {
+    padding: 15px;
+}
+
+/* User Dash Board page stles starts from here */
+.dashboard {
+    padding: 50px 0;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar a.active {
+    background-color: #e9ecef;
+    color: #007bff;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.notification {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    margin-bottom: 10px;
+}
+
+.notification img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.profile-info input,
+.profile-info textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
