@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Fine Arts Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body style="background-image: url('images/steve-johnson-LOnPLLM4rpQ-unsplash.jpg');">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- Background image for Sign-In page -->
+            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image-signin"></div>
+
+            <div class="col-md-8 col-lg-6">
+                <div class="signin d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9 col-lg-8 mx-auto">
+                                <h3 class="signin-heading mb-4">Welcome back!</h3>
+                                <form id="signInForm" action="#">
+                                    <div class="form-label-group">
+                                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                        <label for="inputEmail">Email address</label>
+                                    </div>
+
+                                    <div class="form-label-group">
+                                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                                        <label for="inputPassword">Password</label>
+                                    </div>
+
+                                    <button class="btn btn-lg btn-dark btn-block btn-signin text-uppercase font-weight-bold mb-2 btn-anchor" type="submit"><a href="index.html">Sign-In</a></button>
+                                    <div class="text-center">
+                                        <a class="small" href="signup.html">Don't have an account? Sign Up</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script >
+        document.getElementById('signInForm').addEventListener('submit', function(event) {
+    const email = document.getElementById('inputEmail').value;
+    if (!validateEmail(email)) {
+        alert('Please enter a valid email address.');
+        event.preventDefault();
+    }
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+}
+
+    </script>
+</body>
+</html>

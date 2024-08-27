@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Fine Arts Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img src="images/logo.webp">
+            <a class="navbar-brand title" href="index.html" >Fine Arts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="News&Events.html">News&Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Exhibitions.html">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ArtistProfile.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UserDashBoard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="section categories">
+        <div class="container">
+            <h2>Explore Our Collections by Category</h2>
+            <button class="btn btn-custom category-filter" data-filter="all">All</button>
+            <button class="btn btn-custom category-filter" ><a href="arts.html" style="color: azure;">Art</a></button>
+            <button class="btn btn-custom category-filter" ><a href="ClassicalArt.html" style="color: azure;">Classical Art</a></button>
+            <button class="btn btn-custom category-filter" ><a href="ContemporaryArt.html" style="color: azure;">Contemporary Art</a></button>
+        </div>
+    </section>
+
+    <!-- Collection List Section -->
+    <section class="section collection-list">
+        <div class="container">
+            <div class="row">
+                <!-- Collection Item 1 -->
+                <div class="col-md-4 collection-item" data-category="modern">
+                    <img src="images/Collections-card-img7.jpg" alt="Collection 1">
+                    <div class="collection-details">
+                        <h4>Collection Title 1</h4>
+                        <p>Brief description of Collection 1.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal1">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="modern">
+                    <img src="images/Collections-card-img8.jpg" alt="Collection 1">
+                    <div class="collection-details">
+                        <h4>Collection Title 1</h4>
+                        <p>Brief description of Collection 1.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal1">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="modern">
+                    <img src="images/Collections-card-img9.jpg" alt="Collection 1">
+                    <div class="collection-details">
+                        <h4>Collection Title 1</h4>
+                        <p>Brief description of Collection 1.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal1">View
+                            Details</button>
+                    </div>
+                </div>
+                <!-- Collection Item 2 -->
+                <div class="col-md-4 collection-item" data-category="classical">
+                    <img src="images/Collections-card-img3.jpg" alt="Collection 2">
+                    <div class="collection-details">
+                        <h4>Collection Title 2</h4>
+                        <p>Brief description of Collection 2.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal2">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="classical">
+                    <img src="images/Collections-card-img6.jpg" alt="Collection 2">
+                    <div class="collection-details">
+                        <h4>Collection Title 2</h4>
+                        <p>Brief description of Collection 2.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal2">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="classical">
+                    <img src="images/Collections-card-img4.jpg" alt="Collection 2">
+                    <div class="collection-details">
+                        <h4>Collection Title 2</h4>
+                        <p>Brief description of Collection 2.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal2">View
+                            Details</button>
+                    </div>
+                </div>
+                <!-- Collection Item 3 -->
+                <div class="col-md-4 collection-item" data-category="contemporary">
+                    <img src="images/Collections-card-img7.jpg" alt="Collection 3">
+                    <div class="collection-details">
+                        <h4>Collection Title 3</h4>
+                        <p>Brief description of Collection 3.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal3">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="contemporary">
+                    <img src="images/Collections-card-img8.jpg" alt="Collection 3">
+                    <div class="collection-details">
+                        <h4>Collection Title 3</h4>
+                        <p>Brief description of Collection 3.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal3">View
+                            Details</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4 collection-item" data-category="contemporary">
+                    <img src="images/Collections-card-img9.jpg" alt="Collection 3">
+                    <div class="collection-details">
+                        <h4>Collection Title 3</h4>
+                        <p>Brief description of Collection 3.</p>
+                        <button class="btn btn-custom" data-toggle="modal" data-target="#collectionModal3">View
+                            Details</button>
+                    </div>
+                </div>
+                <!-- More Collection Items can be added in the same format -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Detail Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="collectionModal1" tabindex="-1" aria-labelledby="collectionModal1Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="collectionModal1Label">Collection Title 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Collections-card-img3.jpg" alt="Collection 1 Detail">
+                    <p>Detailed description of Collection 1. This section includes artist information, descriptions,
+                        and dates. Provide in-depth details that engage and inform visitors about the collection's
+                        significance.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="collectionModal2" tabindex="-1" aria-labelledby="collectionModal2Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="collectionModal2Label">Collection Title 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Collections-card-img6.jpg" alt="Collection 2 Detail">
+                    <p>Detailed description of Collection 2. This section includes artist information, descriptions,
+                        and dates. Provide in-depth details that engage and inform visitors about the collection's
+                        significance.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="collectionModal3" tabindex="-1" aria-labelledby="collectionModal3Label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="collectionModal3Label">Collection Title 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/Collections-card-img9.jpg" alt="Collection 3 Detail">
+                    <p>Detailed description of Collection 3. This section includes artist information, descriptions,
+                        and dates. Provide in-depth details that engage and inform visitors about the collection's
+                        significance.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-4">
+        <div class="container">
+            <p>&copy; 2024 Fine Arts Website. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS for Category Filtering -->
+    <script>
+        $(document).ready(function () {
+            $('.category-filter').click(function () {
+                const filter = $(this).data('filter');
+                if (filter === 'all') {
+                    $('.collection-item').show();
+                } else {
+                    $('.collection-item').hide();
+                    $('.collection-item[data-category="' + filter + '"]').show();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

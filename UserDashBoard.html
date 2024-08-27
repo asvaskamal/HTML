@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Fine Arts Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img src="images/logo.webp">
+            <a class="navbar-brand title" href="index.html" >Fine Arts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="News&Events.html">News&Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Exhibitions.html">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ArtistProfile.html">Artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="UserDashBoard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Dashboard Page Section -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 sidebar">
+                    <h4>User Dashboard</h4>
+                    <a href="#profile" class="active">Profile Management</a>
+                    <a href="#registrations">Exhibition Registrations</a>
+                    <a href="#favorites">Favorite Collections</a>
+                    <a href="#notifications">Notification Center</a>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9">
+                    <!-- Profile Management -->
+                    <div id="profile" class="content">
+                        <h4>Profile Management</h4>
+                        <div class="profile-info">
+                            
+                            <form>
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <textarea placeholder="Bio"></textarea>
+                                <button type="submit" class="btn btn-primary">Update Profile</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Exhibition Registrations -->
+                    <div id="registrations" class="content">
+                        <h4>Exhibition Registrations</h4>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Modern Art Exhibition</h5>
+                                <p class="card-text">Date: September 10, 2024</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Classic Paintings Showcase</h5>
+                                <p class="card-text">Date: October 5, 2024</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Favorite Collections -->
+                    <div id="favorites" class="content">
+                        <h4>Favorite Collections</h4>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Impressionist Art</h5>
+                                <p class="card-text">A collection of beautiful Impressionist paintings.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Renaissance Masters</h5>
+                                <p class="card-text">Featuring works from renowned Renaissance artists.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notification Center -->
+                    <div id="notifications" class="content">
+                        <h4>Notification Center</h4>
+                        <div class="notification">
+                            <!-- <img src="notification-icon.jpg" alt="Notification Icon"> -->
+                            <p><strong>Upcoming Event:</strong> Modern Art Exhibition on September 10, 2024.</p>
+                        </div>
+                        <div class="notification">
+                            <!-- <img src="notification-icon.jpg" alt="Notification Icon"> -->
+                            <p><strong>New Collection:</strong> Explore the latest collection of Impressionist Art.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center bg-dark text-white py-4">
+        <div class="container">
+            <p>&copy; 2024 Fine Arts Website. All rights reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="#" class="text-white">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
