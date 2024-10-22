@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Login Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow: hidden;
+            background: #1F2735;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .color {
+            position: absolute;
+            filter: blur(150px);
+        }
+
+        .color:nth-child(1) {
+            top: -35vh;
+            width: 50vw;
+            height: 50vw;
+            background: #ff359b;
+        }
+
+        .color:nth-child(2) {
+            bottom: 15vh;
+            left: 10vw;
+            width: 40vw;
+            height: 40vw;
+            background: #fffd87;
+        }
+
+        .color:nth-child(3) {
+            bottom: 5vh;
+            right: 10vw;
+            width: 25vw;
+            height: 25vw;
+            background: #00d2ff;
+        }
+
+        .box {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        .square {
+            position: absolute;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            animation: animate 10s linear infinite;
+            animation-delay: calc(-1s * var(--i));
+        }
+
+        @keyframes animate {
+            0%, 100% { transform: translateY(-40px); }
+            50% { transform: translateY(40px); }
+        }
+
+        .square:nth-child(1) { top: -50px; right: -68px; width: 100px; height: 100px; }
+        .square:nth-child(2) { top: 40px; left: -100px; width: 120px; height: 120px; z-index: 0; }
+        .square:nth-child(3) { bottom: 50px; right: -70px; width: 80px; height: 80px; z-index: 2; }
+        .square:nth-child(4) { bottom: 60px; left: -21%; width: 50px; height: 50px; }
+        {% comment %} .square:nth-child(5) { top: -88px; left: 140px; width: 0px; height: 0px; } {% endcomment %}
+
+        .container {
+            width: 450px;
+            min-height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            z-index: 2;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .form h2 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form .inputBox {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .form .inputBox input {
+            width: 400px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            outline: none;
+            padding: 10px 15px;
+            border-radius: 35px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .form .inputBox input::placeholder {
+            color: #fff;
+        }
+
+        .form .inputBox input[type="submit"] {
+            background: #fff;
+            color: #666;
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 35px;
+            font-weight: 600;
+            border: none;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        .form .inputBox input[type="submit"]:hover {
+            background: #f0f0f0;
+        }
+
+        .forget {
+            margin-top: 5px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .forget a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* Media query for screens smaller than 500px */
+        @media (max-width: 500px) {
+
+            body {
+                background: #1F2735;
+            }
+           
+            .form h2 {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .container {
+                width: 380px;
+            }
+
+            .form .inputBox input {
+                width: 340px;
+            }
+
+            .square:nth-child(1) { top: 20px; right: -20px; width: 50px; height: 40px; }
+            .square:nth-child(2) { top: 40px; left: -20px; width: 50px; height: 50px; z-index: 0; }
+            .square:nth-child(3) { bottom: 20px; right: -20px; width: 50px; height: 40px; z-index: 2; }
+            .square:nth-child(4) { bottom: 20px; left: -7%; width: 50px; height: 50px; }
+            .square:nth-child(5) { top: -23px; left: 30px; width: 0px; height: 0px; }
+            
+            .box {
+                width: 100%; /* Full width on small screens */
+                max-width: 100%; /* Remove max-width */
+            }
+
+            .container {
+                padding: 10px; /* Adjust padding for small screens */
+            }
+
+
+            body {
+                overflow: auto; /* Ensure no content gets cut off */
+            }
+        }
+
+        @media (max-width: 990px) {
+            .container {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 786px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+            }
+            .form h2 {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .form h2 {
+                font-size: 18px;
+            }
+            .form .inputBox input {
+                padding: 8px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="box">
+            <div class="square" style="--i: 0;"></div>
+            <div class="square" style="--i: 1;"></div>
+            <div class="square" style="--i: 2;"></div>
+            <div class="square" style="--i: 3;"></div>
+            <div class="square" style="--i: 4;"></div>
+            <div class="container">
+                <div class="form">
+                    <h2>SignUp</h2>
+                    <form>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="Email" placeholder="Email" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                        <p class="forget">Already have an account? <a href="#">Login</a></p>                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
